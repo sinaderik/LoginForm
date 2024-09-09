@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     padding: 0;
@@ -9,8 +10,10 @@
 
 body {
     background-color: #786fa6;
-    font-family: "Noto Sans";
-    font-weight: 300;
+    /* font-family: "Noto Sans"; */
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-style: normal;
 }
 
 .flex {
@@ -53,12 +56,16 @@ body {
     /* max-width: 700px; */
     gap: 3rem;
 }
-.name__wrapper{
+
+.name__wrapper {
     gap: 0.5rem;
 }
-.name__wrapper .input__wrapper{
+
+.name__wrapper .input__wrapper {
     max-width: 150px;
+    margin-bottom: 0;
 }
+
 .form__input {
     border: none;
     outline: none;
@@ -66,22 +73,74 @@ body {
     background-color: transparent;
     color: white;
     padding: 0.8rem 0.8rem;
+    width: 100%;
 }
-.input__wrapper{
+
+.input__wrapper {
     border: 1px solid black;
     border-radius: 5px;
     margin: 1rem 0;
     text-align: left;
     background-color: #403b52;
 }
-.input__wrapper input::placeholder{
-color: gray;
+
+.input__wrapper input::placeholder {
+    color: gray;
+}
+
+.submit__form-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.6rem 0.2rem;
+    color: white;
+    background-color: #7753d5;
+    margin-bottom: 1rem;
+}
+
+.line__text {
+    position: relative;
+    color: white;
+    /* font-size: 28px; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+    /* display: inline-block; */
+    /* padding: 0 20px; */
+}
+
+.line__text .register__text::before {
+    content: "";
+    position: absolute;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
+    top: 50%;
+    left: 0%;
+    width: 90px;
+    height: 2px;
+    background-color: white
+}
+
+.line__text .register__text::after {
+    content: "";
+    position: absolute;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
+    right: 0%;
+    top: 50%;
+    width: 90px;
+    height: 2px;
+    background-color: white
+}
+
+.register__text {
+    margin-bottom: 1rem;
 }
 
 form {
     text-align: center;
     margin-bottom: 2rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     max-width: 350px;
     /* border: 2px solid white; */
 }
