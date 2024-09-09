@@ -1,10 +1,16 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #786fa6;
+    
 }
-
+body{
+    background-color: #786fa6;
+    font-family: "Noto Sans";
+    font-weight: 300;
+}
 .flex {
     display: flex;
     align-items: center;
@@ -16,15 +22,20 @@ body {
 
 .container {
     margin: 10% auto;
-    width: 80%;
+    max-width: 800px;
     background-color: #2c2c54;
     padding: 0.8rem;
     border-radius: 12px;
 }
 
-.gallery__wrapper,
+
 .form__wrapper {
     flex-basis: 50%
+}
+.gallery__wrapper{
+    flex-basis: 50%;
+    height: 450px;
+    
 }
 .form__wrapper{
     padding: 0.5rem 1rem;
@@ -32,14 +43,25 @@ body {
     height: 100%;
 }
 .form__gallery-wrapper {
-    width: 100%;
+    /* max-width: 700px; */
+    gap: 1rem;
+}
+form{
+    text-align: center;
 }
 
 img {
     width: 100%;
+    height: 100%;
     border-radius: 6px;
-    object-fit: contain;
+    object-fit: cover;
 }
 p,a,h1{
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .form__gallery-wrapper{
+        flex-direction: column;
+    }
 }
