@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #786fa6;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.container {
+    margin: 10% auto;
+    width: 80%;
+    background-color: #2c2c54;
+    padding: 0.8rem;
+    border-radius: 12px;
+}
+
+.gallery__wrapper,
+.form__wrapper {
+    flex-basis: 50%
+}
+.form__wrapper{
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    height: 100%;
+}
+.form__gallery-wrapper {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: contain;
+}
+p,a,h1{
+    color: white;
+}
