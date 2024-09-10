@@ -178,11 +178,42 @@ span {
 span input {
     margin-right: 0.5rem;
 }
-
+@media only screen and (max-width: 880px){
+    .line__text .register__text::before {
+        left: -5%;
+    }
+    
+    .line__text .register__text::after {
+        right: -5%;
+    }
+    
+}   
+@media only screen and (max-width: 810px){
+    .gallery__wrapper{
+        height: 490px;
+    }
+    .line__text .register__text::before {
+        left: -9%;
+    }
+    
+    .line__text .register__text::after {
+        right: -9%;
+    }
+}
 @media only screen and (max-width: 768px) {
+    .container{
+        max-width: 500px;
+    }
     .form__gallery-wrapper {
         flex-direction: column;
         gap: 2rem;
         /* max-width: 400px; */
+    }
+    .line__text .register__text::before {
+        left: 0%;
+    }
+    
+    .line__text .register__text::after {
+        right: 0%;
     }
 }
