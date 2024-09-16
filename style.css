@@ -42,9 +42,23 @@ body {
 .gallery__wrapper {
     flex-basis: 60%;
     height: 450px;
-
+    position: relative;
 }
-
+.gallery__btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+}
+.gallery__btn{
+    width: 30px;
+    height: 3px;
+    /* border-radius: 50%; */
+    background-color: #fff;
+}
 .form__wrapper {
     padding: 0rem 1rem;
     /* border: 2px solid white; */
@@ -215,5 +229,26 @@ span input {
     
     .line__text .register__text::after {
         right: 0%;
+    }
+}
+@media only screen and (max-width: 420px){
+    /* .gallery__wrapper {
+        flex-basis: 60%;
+        height: 450px;
+        position: relative;
+    } */
+    .gallery__btn-wrapper{
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem; */
+        position: absolute;
+        left: 40%;
+        bottom: 0;
+    }
+    .gallery__btn{
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
     }
 }
